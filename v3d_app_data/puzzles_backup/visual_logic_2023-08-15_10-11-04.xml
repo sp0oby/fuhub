@@ -1,0 +1,698 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="-179.09387207031364" scrolly="-250" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="!gWs+Ui$J22fJfg#k[Zf" x="250" y="250">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">background</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <block type="text" id="A+n[a4]sQ:)?)-aQR5ij">
+          <field name="TEXT">red</field>
+        </block>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="y7*fhgSE+zEuzron_Ppy">
+          <field name="TEXT"></field>
+        </shadow>
+        <block type="text" id="W!2yQ,B1d`aNEQWc0ty6">
+          <field name="TEXT">.v3d-simple-preloader-bar</field>
+        </block>
+      </value>
+      <next>
+        <block type="setCSSRuleStyle" id="EAh@kH|3SrAJVa$^t+$%">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">backgroundImage</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="bDbTcVl!Ypl[y$H!(:vS">
+              <field name="TEXT">url("sitebackground.png")</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="y7*fhgSE+zEuzron_Ppy">
+              <field name="TEXT"></field>
+            </shadow>
+            <block type="text" id="q[rp?p^q{?UU7EvTrE|:">
+              <field name="TEXT">.v3d-simple-preloader-background</field>
+            </block>
+          </value>
+          <next>
+            <block type="setCSSRuleStyle" id="Bi6gG}Yy8jB4XzE$Du_N">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+              <field name="PROPERTY">background</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="}MS?8,:=44RMd){eUt:Z">
+                  <field name="TEXT">url("FUpreloader.png")</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="y7*fhgSE+zEuzron_Ppy">
+                  <field name="TEXT"></field>
+                </shadow>
+                <block type="text" id="cp:Wz9XXrQH?g%dlnY[0">
+                  <field name="TEXT">.v3d-simple-preloader-logo</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="connector" id="H2O0jc04*p[ir}uVexmo" x="410" y="490">
+      <value name="VALUE">
+        <block type="loadSoundAdv" id="+1qoI^i4XHXNO#m,[2y?">
+          <field name="TYPE">SOUND</field>
+          <value name="URL">
+            <shadow type="text" id="W^v:z4LCh5(#2m-Ama)|">
+              <field name="TEXT">./dralpha.mp3</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="connector" id="pdupPuav7GJrjt;CT]h3">
+          <value name="VALUE">
+            <block type="loadVideo" id="]X_+q@o:-[2~^o[/Bc_S">
+              <value name="URL">
+                <shadow type="text" id="3.2W*;jTD7D*nf*#{Sqz">
+                  <field name="TEXT">./mintnowvid.mp4</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="connector" id="0:/[#+*-}/3Xy^H%[$%C">
+              <value name="VALUE">
+                <block type="loadVideo" id="GPy;VZ+%?qu`;!)r[Jh(">
+                  <value name="URL">
+                    <shadow type="text" id="mhpHN{v|yjD8N=y9zTpV">
+                      <field name="TEXT">./gameplay.mp4</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="connector" id="T:JH}d?)te?h67SpHSuU">
+                  <value name="VALUE">
+                    <block type="loadVideo" id="NyL!Qutn6P9_zxz%PpI:">
+                      <value name="URL">
+                        <shadow type="text" id="HkQ=G.v87Oy)jm,Z4|c)">
+                          <field name="TEXT">./animatashortclip.mp4</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="127.49430362753276" scrolly="-460.03087429756124" scale="0.644608916217797">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="k;17z!++{II5{Gqx9828">gameplay</variable>
+      <variable id="yXL1GEs3K*YGRr*`c26K">video</variable>
+      <variable id="pjY`b75/~S3qfy@p;5O;">aniamata</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="ydo5!e9efS|r~Kz/^BZ)" inline="false" x="1090" y="1010">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="E{I?_.bth{bKpl.qxTaT">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="{2MaB+JerG9a)c)JW(8e"></block>
+      </value>
+      <statement name="DO">
+        <block type="printPerformanceInfo" id="4%4iEXmAb|Ez6,^^4xx!"></block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="E?{AngW3R2jQvSPH%hG]" x="490" y="1130">
+      <value name="THRESHOLD">
+        <shadow type="number_slider" id="~.ffIJ(o`v^*6W}nfVgV">
+          <field name="NUM" min="0" max="10" step="0.1">0.5</field>
+        </shadow>
+      </value>
+      <value name="STRENGTH">
+        <shadow type="number_slider" id="_EX`m[HQ;:YYBE5`n7*Y">
+          <field name="NUM" min="0" max="10" step="0.1">0.2</field>
+        </shadow>
+      </value>
+      <value name="RADIUS">
+        <shadow type="number_slider" id="qVa4IX1fupN5::BCj)F{">
+          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setTimeout" id="h0vo~D5E]*HEyq~JlQxQ">
+          <value name="VALUE">
+            <shadow type="math_number" id="$?%NK;nI#mk3mt0gKRq{">
+              <field name="NUM">5</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="playAnimationAdv" id="LmmKKhzZSot?8k/[8a;3">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+              <field name="REVERSED">FALSE</field>
+              <field name="LOOP">AUTO</field>
+              <value name="VALUE">
+                <shadow type="animationList" id="/80so9-Ovp).=G}Ac966">
+                  <field name="FIELDNAME">Sphere</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id=".5mnAmN(h6o[tR5NtmV~" inline="false" x="410" y="1430">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="B:GWrssxN+{HZ$mvZ;g;">
+          <field name="FIELDNAME">Arcade</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="jEYBYk(alXtpD5+7:zm#">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="w-zqd^_O.p=[Uum_xY#}">
+              <field name="FIELDNAME">Arcade</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="wDIx=XoV^psGIPSo.4Xi">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="!6yMec`C`+$Cc1VCB23m">
+              <field name="FIELDNAME">Arcade</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenHovered" id="btSRa8*HkIXHdqYda6oe" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="^Tb`@jkqF/o*W5kS:RzR">
+              <field name="FIELDNAME">Slide</field>
+            </shadow>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="99*uW/8/N8jVY0x*~84;">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="q0/Rs`J4uUyc#SED]^EZ">
+                  <field name="FIELDNAME">Slide</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="X6$BlYv;U(`]7Y5uw,(9">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="Eb:(i8V[L?AxaaBkK5Qu">
+                  <field name="FIELDNAME">Slide</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="b]5i1bg48dpf:2qsz2cv" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="G7]LP7=fkEiiECl-;.Fa">
+                  <field name="FIELDNAME">Discord</field>
+                </shadow>
+              </value>
+              <statement name="DO_OVER">
+                <block type="outline" id="STg}LUa`WN!~$Y)%I3*8">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="`V|Mnzj!tfylN39hhkdo">
+                      <field name="FIELDNAME">Discord</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="outline" id="];!l4Ak$EPQk-(t8qpA;">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="@QRyKbygIi(r/3`,W^Z|">
+                      <field name="FIELDNAME">Discord</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenHovered" id="#hyYYx_xC,Id8bG9Tg^d" inline="false">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="8yj4YAbW2u;a.EJRhK=n">
+                      <field name="FIELDNAME">Twitter</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO_OVER">
+                    <block type="outline" id="dk5%`|WeqR{z`~jkskum">
+                      <field name="DO_WHAT">ENABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="HgCoDVE{_6Qt,{c*VoNH">
+                          <field name="FIELDNAME">Twitter</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                  <statement name="DO_OUT">
+                    <block type="outline" id="INcB5X[XnI2*3s9w.}od">
+                      <field name="DO_WHAT">DISABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="?Yv=baf)F|,d0]#2#ZGY">
+                          <field name="FIELDNAME">Twitter</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenHovered" id="j+.bCBbm{;Jxn:kFk{jz" inline="false">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="zp9*sGCt:7Aodi/3M_4v">
+                          <field name="FIELDNAME">Mint</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO_OVER">
+                        <block type="outline" id="(+fu`uIvB(I@mnu;NC%q">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="f8%D`5`kDV7,`}%OVTHy">
+                              <field name="FIELDNAME">Mint</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                      <statement name="DO_OUT">
+                        <block type="outline" id="48p]X0(91cNCQ!M8/fl(">
+                          <field name="DO_WHAT">DISABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="1f5(vY4o6j(mLwmbZ%H?">
+                              <field name="FIELDNAME">Mint</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="whenHovered" id="2Zo5orMHljknNtiRq8!g" inline="false">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
+                          <value name="VALUE">
+                            <shadow type="objectList" id=")$`M*ci/rub*9#Q+JHdA">
+                              <field name="FIELDNAME">questionmark</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO_OVER">
+                            <block type="outline" id="kVPy}L=S3oKaT-]90TN^">
+                              <field name="DO_WHAT">ENABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList" id="o,:~N.vnqbYKK.t9WN-W">
+                                  <field name="FIELDNAME">questionmark</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                          <statement name="DO_OUT">
+                            <block type="outline" id="G{F%$3Q,WD!Wb}{N7%vb">
+                              <field name="DO_WHAT">DISABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList" id="~nUVatg3Re!v1[K(cWmK">
+                                  <field name="FIELDNAME">questionmark</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="5?_4#4xr{/I]KglLEL1W" inline="false" x="1010" y="1430">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="=)4[W)4dRBCh:QJ*6AQl">
+          <field name="FIELDNAME">Arcade</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playSound" id="[,h0=-+^N%1c3HKN%QoT">
+          <field name="LOOP">FALSE</field>
+          <value name="VALUE">
+            <block type="loadSoundAdv" id="+1qoI^i4XHXNO#m,[2y?">
+              <field name="TYPE">SOUND</field>
+              <value name="URL">
+                <shadow type="text" id="W^v:z4LCh5(#2m-Ama)|">
+                  <field name="TEXT">./dralpha.mp3</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id="PH!|;~mGOuo%#cS^(Ym2" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id=":^-}+q9x*kvZ%3:9UpK1">
+              <field name="FIELDNAME">Discord</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="openWebPage" id="BMj~8*oE4;yT;HD1r?sI">
+              <field name="MODE">NEW</field>
+              <value name="URL">
+                <shadow type="text" id="uOTXh_IH6vwY4Vt=@(M6">
+                  <field name="TEXT">https://discord.com/invite/fxyyZCTaBS</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id=":w:A2%1jQk`a5:?9]m9X" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="eEj3ZympTR^RH%_CFO-U">
+                  <field name="FIELDNAME">Twitter</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="openWebPage" id="r/z;X7z-ehrW`#hC[Hld">
+                  <field name="MODE">NEW</field>
+                  <value name="URL">
+                    <shadow type="text" id="O$4pmg1],xGc3/*]C2gj">
+                      <field name="TEXT">https://twitter.com/FU_STUDIOS</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenClicked" id="]*yo@V^GRk6}7rUdMWxV" inline="false">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="AB*?s/|Bfvch,K|30}l0">
+                      <field name="FIELDNAME">Mint</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="openWebPage" id="X?Iau-A+l^T%luyUq9W^">
+                      <field name="MODE">NEW</field>
+                      <value name="URL">
+                        <shadow type="text" id="!F}rI5_t4OQFI!e$Df*~">
+                          <field name="TEXT">https://www.scatter.art/fractional-uprising-studio-membership?tab=mint</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenClicked" id="E5^0Ss!6L-oTzfCC[,)J" inline="false">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <field name="DOUBLE_CLICK">FALSE</field>
+                      <field name="LEFT_BUTTON">TRUE</field>
+                      <field name="MIDDLE_BUTTON">TRUE</field>
+                      <field name="RIGHT_BUTTON">TRUE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="x/~ky;s-vgi*xhKT[2)]">
+                          <field name="FIELDNAME">questionmark</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="openWebPage" id="(sO9djUrSL_/X;H6zouY">
+                          <field name="MODE">NEW</field>
+                          <value name="URL">
+                            <shadow type="text" id="jyu8V6f4ivxCmrQl]!%H">
+                              <field name="TEXT">./privacy/privacy.html</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenMoved" id="T4+nYHqua?;$Z4m@xti*" x="1790" y="1610">
+      <value name="OBJECT">
+        <shadow type="objectList" id="J91zB^tss19@3yV.ulij">
+          <field name="FIELDNAME">Camera</field>
+        </shadow>
+      </value>
+      <value name="DELTA">
+        <shadow type="math_number" id="*$pn!mV={M@DCU=/K-k1">
+          <field name="NUM">0.01</field>
+        </shadow>
+      </value>
+      <statement name="DO_START">
+        <block type="variables_set" id="Zq}4rqeMIUL+.e(zm`|2">
+          <field name="VAR" id="k;17z!++{II5{Gqx9828">gameplay</field>
+          <value name="VALUE">
+            <block type="loadVideo" id="qpe`E;:_I}O(|fR_YX.N">
+              <value name="URL">
+                <shadow type="text" id="|9K];}3?Rij}T_OOIR)^">
+                  <field name="TEXT">./gameplay.mp4</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setTimeout" id="KA1wgN!FO@97)|]VYT)c">
+              <value name="VALUE">
+                <shadow type="math_number" id="n}#Rc|?3.xGNjA#o.LYc">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="playSound" id="rIGLX79W2|GtsLH))Jgs">
+                  <field name="LOOP">TRUE</field>
+                  <value name="VALUE">
+                    <block type="loadVideo" id="4FzjLa__G%=)$KJ(O6v}">
+                      <value name="URL">
+                        <shadow type="text" id=")?{xqJdjADsU.HD,hCMY">
+                          <field name="TEXT">./gameplay.mp4</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="replaceTexture" id="u]]8G*t,h{?2,%v}pfQ=">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">gameplay.mp4</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="H!xqrY;@`0-f0zP[XS97">
+                          <field name="FIELDNAME">leftscreen</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="o5DjMk|-O3+Arlm)^%0Z">
+                          <field name="TEXT">./newTexture.png</field>
+                        </shadow>
+                        <block type="variables_get" id="z.9w?w9j[O+z,shpgtSp">
+                          <field name="VAR" id="k;17z!++{II5{Gqx9828">gameplay</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="playSound" id="g!HG;vB;gj1;NY{AQ-eW">
+                          <field name="LOOP">TRUE</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="b@]Z,|u%t}G#N`Q|}9#,">
+                              <field name="VAR" id="k;17z!++{II5{Gqx9828">gameplay</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="variables_set" id="+{hf]TudAj7|dpnYZc`K">
+                  <field name="VAR" id="yXL1GEs3K*YGRr*`c26K">video</field>
+                  <value name="VALUE">
+                    <block type="loadVideo" id="%,1t(f!==+w9%Wm^5Nck">
+                      <value name="URL">
+                        <shadow type="text" id="v2K,ubdXfn6H)l4!a6Ko">
+                          <field name="TEXT">./mintnowvid.mp4</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setTimeout" id=":.!D]gifb6*M(p9d/qYt">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="q0*,hr#k|j;5HRQUm6(e">
+                          <field name="NUM">0</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="playSound" id="lT_Jfjy*#X_)9eT[xNzX">
+                          <field name="LOOP">TRUE</field>
+                          <value name="VALUE">
+                            <block type="loadVideo" id="0.PfQ?K-a}t/t3E8EIXi">
+                              <value name="URL">
+                                <shadow type="text" id="el!cnvxa;kK/@K-*o4p$">
+                                  <field name="TEXT">./mintnowvid.mp4</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="replaceTexture" id=",gg%!0]5V?W2RCgh9y4?">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">mintnowvid.mp4</field>
+                              <value name="MATERIAL">
+                                <block type="materialList" id="_Q4*McSy!^Q4jg#DEeG-">
+                                  <field name="FIELDNAME">mainscreen</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text" id="f}pQ3Nu;;a!nSyBeH`dX">
+                                  <field name="TEXT">./newTexture.png</field>
+                                </shadow>
+                                <block type="variables_get" id="u4|;Kx$Zg.^ecQveDTfR">
+                                  <field name="VAR" id="yXL1GEs3K*YGRr*`c26K">video</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="playSound" id=",Qc@:hc8W=kT4Do,$92W">
+                                  <field name="LOOP">TRUE</field>
+                                  <value name="VALUE">
+                                    <block type="variables_get" id="pK8hU[5RJg:cQO*!I-O!">
+                                      <field name="VAR" id="yXL1GEs3K*YGRr*`c26K">video</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="variables_set" id=":@bdnh+oeA*.QT-Af6Up">
+                          <field name="VAR" id="pjY`b75/~S3qfy@p;5O;">aniamata</field>
+                          <value name="VALUE">
+                            <block type="loadVideo" id="NyL!Qutn6P9_zxz%PpI:">
+                              <value name="URL">
+                                <shadow type="text" id="HkQ=G.v87Oy)jm,Z4|c)">
+                                  <field name="TEXT">./animatashortclip.mp4</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setTimeout" id="2i?Y)^_~EpA25L(,]D=1">
+                              <value name="VALUE">
+                                <shadow type="math_number" id="9-{t4)HWX$2UWR27H*xI">
+                                  <field name="NUM">0</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="playSound" id="a/;b$/^CH14l-5/`4-!a">
+                                  <field name="LOOP">TRUE</field>
+                                  <value name="VALUE">
+                                    <block type="loadVideo" id=":7jH96`3=U*}~k:C,V2j">
+                                      <value name="URL">
+                                        <shadow type="text" id="5@)(yMh*iJPyP5)X(tp#">
+                                          <field name="TEXT">./animatashortclip.mp4</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="replaceTexture" id="F^qn:7B36hN2aCuH)oA|">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+                                      <field name="OLD_TEX_NAME">animatashortclip.mp4</field>
+                                      <value name="MATERIAL">
+                                        <block type="materialList" id=";d6mu}Ltj$mdVXk+^3N|">
+                                          <field name="FIELDNAME">rightscreen</field>
+                                        </block>
+                                      </value>
+                                      <value name="NEW_TEX_URL">
+                                        <shadow type="text" id="v8cl|lGR2__FLKO,Kk}J">
+                                          <field name="TEXT">./newTexture.png</field>
+                                        </shadow>
+                                        <block type="variables_get" id="20h)jc.}[rM%HP)mcw^D">
+                                          <field name="VAR" id="pjY`b75/~S3qfy@p;5O;">aniamata</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="playSound" id="@/59FGsG#Jap1Cy6LN2;">
+                                          <field name="LOOP">TRUE</field>
+                                          <value name="VALUE">
+                                            <block type="variables_get" id="!1,iCy_HeP:LMiE_2cUC">
+                                              <field name="VAR" id="yXL1GEs3K*YGRr*`c26K">video</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1675" viewport-y="132.3333282470703" viewport-w="510" viewport-h="272.5" viewport-hidden="false" toolbox-library-mode="true" toolbox-minimized-mode="false"></editorsettings>
+</xml>

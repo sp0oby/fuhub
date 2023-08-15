@@ -1,0 +1,61 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="0" scrolly="0" scale="1"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="-7.171905517578125" scrolly="-858.2196044921874" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="E?{AngW3R2jQvSPH%hG]" x="290" y="1130">
+      <value name="THRESHOLD">
+        <shadow type="number_slider" id="~.ffIJ(o`v^*6W}nfVgV">
+          <field name="NUM" min="0" max="10" step="0.1">0.9</field>
+        </shadow>
+      </value>
+      <value name="STRENGTH">
+        <shadow type="number_slider" id="_EX`m[HQ;:YYBE5`n7*Y">
+          <field name="NUM" min="0" max="10" step="0.1">0.4</field>
+        </shadow>
+      </value>
+      <value name="RADIUS">
+        <shadow type="number_slider" id="qVa4IX1fupN5::BCj)F{">
+          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimeout" id="h0vo~D5E]*HEyq~JlQxQ" x="890" y="1350">
+      <value name="VALUE">
+        <shadow type="math_number" id="$?%NK;nI#mk3mt0gKRq{">
+          <field name="NUM">5</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="LmmKKhzZSot?8k/[8a;3">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">AUTO</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="/80so9-Ovp).=G}Ac966">
+              <field name="FIELDNAME">Sphere</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id=".5mnAmN(h6o[tR5NtmV~" inline="false" x="410" y="1430">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="B:GWrssxN+{HZ$mvZ;g;">
+          <field name="FIELDNAME">Arcade</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="jEYBYk(alXtpD5+7:zm#">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="w-zqd^_O.p=[Uum_xY#}">
+              <field name="FIELDNAME">Arcade</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1570.3333740234375" viewport-y="133.66665649414062" viewport-w="510" viewport-h="272.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

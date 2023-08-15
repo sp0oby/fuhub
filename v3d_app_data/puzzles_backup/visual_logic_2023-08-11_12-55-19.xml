@@ -1,0 +1,375 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="-1.1368683772161603e-12" scrolly="-250" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setCSSRuleStyle" id="!gWs+Ui$J22fJfg#k[Zf" x="250" y="250">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+      <field name="PROPERTY">background</field>
+      <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <block type="text" id="A+n[a4]sQ:)?)-aQR5ij">
+          <field name="TEXT">red</field>
+        </block>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="y7*fhgSE+zEuzron_Ppy">
+          <field name="TEXT"></field>
+        </shadow>
+        <block type="text" id="W!2yQ,B1d`aNEQWc0ty6">
+          <field name="TEXT">.v3d-simple-preloader-bar</field>
+        </block>
+      </value>
+      <next>
+        <block type="setCSSRuleStyle" id="EAh@kH|3SrAJVa$^t+$%">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+          <field name="PROPERTY">backgroundImage</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="bDbTcVl!Ypl[y$H!(:vS">
+              <field name="TEXT">url("sitebackground.png")</field>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="y7*fhgSE+zEuzron_Ppy">
+              <field name="TEXT"></field>
+            </shadow>
+            <block type="text" id="q[rp?p^q{?UU7EvTrE|:">
+              <field name="TEXT">.v3d-simple-preloader-background</field>
+            </block>
+          </value>
+          <next>
+            <block type="setCSSRuleStyle" id="Bi6gG}Yy8jB4XzE$Du_N">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+              <field name="PROPERTY">background</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="}MS?8,:=44RMd){eUt:Z">
+                  <field name="TEXT">url("FUpreloader.png")</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="y7*fhgSE+zEuzron_Ppy">
+                  <field name="TEXT"></field>
+                </shadow>
+                <block type="text" id="cp:Wz9XXrQH?g%dlnY[0">
+                  <field name="TEXT">.v3d-simple-preloader-logo</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="316.022825482034" scrolly="-428.40979217606036" scale="0.7462153966366274">
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="E?{AngW3R2jQvSPH%hG]" x="290" y="1130">
+      <value name="THRESHOLD">
+        <shadow type="number_slider" id="~.ffIJ(o`v^*6W}nfVgV">
+          <field name="NUM" min="0" max="10" step="0.1">0.9</field>
+        </shadow>
+      </value>
+      <value name="STRENGTH">
+        <shadow type="number_slider" id="_EX`m[HQ;:YYBE5`n7*Y">
+          <field name="NUM" min="0" max="10" step="0.1">0.4</field>
+        </shadow>
+      </value>
+      <value name="RADIUS">
+        <shadow type="number_slider" id="qVa4IX1fupN5::BCj)F{">
+          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimeout" id="h0vo~D5E]*HEyq~JlQxQ" x="890" y="1190">
+      <value name="VALUE">
+        <shadow type="math_number" id="$?%NK;nI#mk3mt0gKRq{">
+          <field name="NUM">5</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="LmmKKhzZSot?8k/[8a;3">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">AUTO</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="/80so9-Ovp).=G}Ac966">
+              <field name="FIELDNAME">Sphere</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id=".5mnAmN(h6o[tR5NtmV~" inline="false" x="410" y="1430">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="B:GWrssxN+{HZ$mvZ;g;">
+          <field name="FIELDNAME">Arcade</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="jEYBYk(alXtpD5+7:zm#">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="w-zqd^_O.p=[Uum_xY#}">
+              <field name="FIELDNAME">Arcade</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="wDIx=XoV^psGIPSo.4Xi">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="!6yMec`C`+$Cc1VCB23m">
+              <field name="FIELDNAME">Arcade</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenHovered" id="btSRa8*HkIXHdqYda6oe" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="^Tb`@jkqF/o*W5kS:RzR">
+              <field name="FIELDNAME">Slide</field>
+            </shadow>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="99*uW/8/N8jVY0x*~84;">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="q0/Rs`J4uUyc#SED]^EZ">
+                  <field name="FIELDNAME">Slide</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="X6$BlYv;U(`]7Y5uw,(9">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="Eb:(i8V[L?AxaaBkK5Qu">
+                  <field name="FIELDNAME">Slide</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenHovered" id="b]5i1bg48dpf:2qsz2cv" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="G7]LP7=fkEiiECl-;.Fa">
+                  <field name="FIELDNAME">Discord</field>
+                </shadow>
+              </value>
+              <statement name="DO_OVER">
+                <block type="outline" id="STg}LUa`WN!~$Y)%I3*8">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="`V|Mnzj!tfylN39hhkdo">
+                      <field name="FIELDNAME">Discord</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <statement name="DO_OUT">
+                <block type="outline" id="];!l4Ak$EPQk-(t8qpA;">
+                  <field name="DO_WHAT">DISABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="@QRyKbygIi(r/3`,W^Z|">
+                      <field name="FIELDNAME">Discord</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenHovered" id="#hyYYx_xC,Id8bG9Tg^d" inline="false">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="8yj4YAbW2u;a.EJRhK=n">
+                      <field name="FIELDNAME">Twitter</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO_OVER">
+                    <block type="outline" id="dk5%`|WeqR{z`~jkskum">
+                      <field name="DO_WHAT">ENABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="HgCoDVE{_6Qt,{c*VoNH">
+                          <field name="FIELDNAME">Twitter</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                  <statement name="DO_OUT">
+                    <block type="outline" id="INcB5X[XnI2*3s9w.}od">
+                      <field name="DO_WHAT">DISABLE</field>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="?Yv=baf)F|,d0]#2#ZGY">
+                          <field name="FIELDNAME">Twitter</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="whenHovered" id="j+.bCBbm{;Jxn:kFk{jz" inline="false">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                      <field name="X_RAY">FALSE</field>
+                      <value name="VALUE">
+                        <shadow type="objectList" id="zp9*sGCt:7Aodi/3M_4v">
+                          <field name="FIELDNAME">Mint</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO_OVER">
+                        <block type="outline" id="(+fu`uIvB(I@mnu;NC%q">
+                          <field name="DO_WHAT">ENABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="f8%D`5`kDV7,`}%OVTHy">
+                              <field name="FIELDNAME">Mint</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                      <statement name="DO_OUT">
+                        <block type="outline" id="48p]X0(91cNCQ!M8/fl(">
+                          <field name="DO_WHAT">DISABLE</field>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="1f5(vY4o6j(mLwmbZ%H?">
+                              <field name="FIELDNAME">Mint</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="5?_4#4xr{/I]KglLEL1W" inline="false" x="1010" y="1430">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="=)4[W)4dRBCh:QJ*6AQl">
+          <field name="FIELDNAME">Arcade</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="openWebPage" id="ZI]z:v#|,XBA(Nny.ymz">
+          <field name="MODE">NEW</field>
+          <value name="URL">
+            <shadow type="text" id="#-lgOWO8*V2$}Tl#315?">
+              <field name="TEXT">https://www.soft8soft.com/</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="whenClicked" id="XWSpID=KLMUv1g^E:OSZ" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="UJR^`liG).9vkzb?w{hM">
+              <field name="FIELDNAME">Slide</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="openWebPage" id="SkcC`kQ/vt5H6Kk8|Tq.">
+              <field name="MODE">NEW</field>
+              <value name="URL">
+                <shadow type="text" id="Nyy-.c:Q*+%fC7!LW0wf">
+                  <field name="TEXT">https://www.soft8soft.com/</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="PH!|;~mGOuo%#cS^(Ym2" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id=":^-}+q9x*kvZ%3:9UpK1">
+                  <field name="FIELDNAME">Discord</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="openWebPage" id="BMj~8*oE4;yT;HD1r?sI">
+                  <field name="MODE">NEW</field>
+                  <value name="URL">
+                    <shadow type="text" id="uOTXh_IH6vwY4Vt=@(M6">
+                      <field name="TEXT">https://discord.com/invite/fxyyZCTaBS</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="whenClicked" id=":w:A2%1jQk`a5:?9]m9X" inline="false">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                  <field name="X_RAY">FALSE</field>
+                  <field name="DOUBLE_CLICK">FALSE</field>
+                  <field name="LEFT_BUTTON">TRUE</field>
+                  <field name="MIDDLE_BUTTON">TRUE</field>
+                  <field name="RIGHT_BUTTON">TRUE</field>
+                  <value name="VALUE">
+                    <shadow type="objectList" id="eEj3ZympTR^RH%_CFO-U">
+                      <field name="FIELDNAME">Twitter</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="openWebPage" id="r/z;X7z-ehrW`#hC[Hld">
+                      <field name="MODE">NEW</field>
+                      <value name="URL">
+                        <shadow type="text" id="O$4pmg1],xGc3/*]C2gj">
+                          <field name="TEXT">https://twitter.com/FU_STUDIOS</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="]*yo@V^GRk6}7rUdMWxV" inline="false" x="990" y="1850">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="AB*?s/|Bfvch,K|30}l0">
+          <field name="FIELDNAME">Mint</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="openWebPage" id="X?Iau-A+l^T%luyUq9W^">
+          <field name="MODE">NEW</field>
+          <value name="URL">
+            <shadow type="text" id="!F}rI5_t4OQFI!e$Df*~">
+              <field name="TEXT">https://www.scatter.art/fractional-uprising-studio-membership?tab=mint</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1570.3333740234375" viewport-y="133.66665649414062" viewport-w="510" viewport-h="272.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

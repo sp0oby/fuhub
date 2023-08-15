@@ -1,0 +1,5 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="true" scrollx="0" scrolly="0" scale="1"></tab>
+  <tab name="New Tab" type="CommonTab" active="false" scrollx="248.04696655273438" scrolly="224.1005859375" scale="0.3"></tab>
+  <editorsettings viewport-x="747" viewport-y="37" viewport-w="510" viewport-h="272.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
